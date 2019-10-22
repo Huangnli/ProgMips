@@ -1,6 +1,7 @@
 #Código de soma
 .data
-
+    a: .word 10
+    b: .word 5
 
 .text
 addi $v0, $zero, 5	# primeira leitura (a)
