@@ -59,7 +59,7 @@ void add(char num1[], char num2[]) {
                 }
             }
         } 
-    for(int i = 0; i < 31; i++){
+    for(int i = 32; i >= 0; i--){
         printf("%d ", result[i]);
     }  
     printf("\n");
