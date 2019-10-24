@@ -19,4 +19,7 @@ add $a0, $t0, $t1	# faz a soma de a + b, guarda em a0
 addi $v0, $zero, 1	# printf a0
 syscall
 
+addi $v0, $zero, 10	# fim do algoritmo
+syscall
+
 			# ASS: Richard S2
