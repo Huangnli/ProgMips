@@ -66,15 +66,12 @@ void add(char num1[], char num2[]) {
 }
 
 int main (void){
-	char x[31];
-	char y[31];
-
-	for(int i = 0; i < 32; i++){
-		x[i] = 0;
-		y[i] = 0;
-	}
-	y[23] = 1;
-	x[5] = 1;
+	char x[31] = {0};
+	char y[31] = {0};
+	
+	scanf(" %s", x);
+	scanf(" %s", y);
+	
 	add(x, y); 
     return 0;
 }
