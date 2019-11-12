@@ -1,0 +1,22 @@
+.data
+    a: .word 10
+    b: .word 5
+
+.text
+addi $v0, $zero, 5	# primeira leitura
+syscall
+
+add $t0, $zero, $v0	# armazena a em t0
+
+addi $v0, $zero, 5	# segunda leitura 
+syscall
+
+add $t1, $zero, $v0	# guarda b em t1
+
+sub $a0, $t0, $t1	
+
+addi $v0, $zero, 1	# printf a0
+syscall
+
+addi $v0, $zero, 10	# fim do algoritmo
+syscall
